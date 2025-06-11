@@ -7,20 +7,6 @@ title: Prakhar Rathi # Website name
 baseurl: 'https://prakharrathi25.netlify.app/' # Website URL
 copyright: '© 2022 Prakhar Rathi' # Footer text, e.g. '© {year} Me'
 
-[security]
-  enableInlineShortcodes = false
-
-  [security.exec]
-    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
-    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|WC_POST_CSS)$']
-
-  [security.funcs]
-    getenv = ['^HUGO_', '^CI$', '^WC_POST_CSS$']
-
-  [security.http]
-    methods = ['(?i)GET|POST']
-    urls = ['.*']
-
 ############################
 ## LANGUAGE
 ############################
